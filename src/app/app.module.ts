@@ -10,6 +10,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { ViewallstudentComponent } from './viewallstudent/viewallstudent.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
+import { ViewallfacultyComponent } from './viewallfaculty/viewallfaculty.component';
 
 
 const appRoutes:Routes=[
@@ -27,7 +28,11 @@ const appRoutes:Routes=[
   },
   {
     path:"addfac",component:AddfacultyComponent
+  },
+  {
+    path:"viewfac",component:ViewallfacultyComponent
   }
+  
 ]
 @NgModule({
   declarations: [
@@ -36,7 +41,8 @@ const appRoutes:Routes=[
     NavbarComponent,
     AddstudentComponent,
     ViewallstudentComponent,
-    AddfacultyComponent
+    AddfacultyComponent,
+    ViewallfacultyComponent
   ],
   imports: [
     BrowserModule,
