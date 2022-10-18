@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddstudentComponent } from './addstudent/addstudent.component';
 import { ViewallstudentComponent } from './viewallstudent/viewallstudent.component';
+import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 
 
 const appRoutes:Routes=[
@@ -23,6 +24,9 @@ const appRoutes:Routes=[
   },
   {
     path:"view",component:ViewallstudentComponent
+  },
+  {
+    path:"addfac",component:AddfacultyComponent
   }
 ]
 @NgModule({
@@ -31,7 +35,8 @@ const appRoutes:Routes=[
     AdminloginComponent,
     NavbarComponent,
     AddstudentComponent,
-    ViewallstudentComponent
+    ViewallstudentComponent,
+    AddfacultyComponent
   ],
   imports: [
     BrowserModule,

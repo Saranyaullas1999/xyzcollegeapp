@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="">Faculty Name :</label>
+                    <input type="text" class="form-control" name="facname" [(ngModel)]="facname">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="">Department :</label>
+                    <select name="dep" id="" class="form-control" [(ngModel)]="dep">
+                        <option value="ComputerScience & Engineering">ComputerScience & Engineering</option>
+                        <option value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Civil Engineering">Civil Engineering</option>
+                        <option value="Biotechnology Engineering">Biotechnology Engineering</option>
+                        <option value="Chemical Engineering">Chemical Engineering</option>
+                    </select>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="">Designation</label>
+                    <input type="text" class="form-control" name="designation" [(ngModel)]="designation">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="">Date Of Birth</label>
+                    <input type="date" name="dob" id="" class="form-control" [(ngModel)]="dob">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="">Qualification</label>
+                    <input type="text" class="form-control" name="qualification" [(ngModel)]="qualification">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="">Address :</label>
+                    <textarea name="address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="address"></textarea>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="">Mobile</label>
+                    <input type="text" class="form-control" name="mobile" [(ngModel)]="mobile">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <label for="">Date Of Joining</label>
+                    <input type="date" name="doj" id="" class="form-control" [(ngModel)]="doj">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button class="btn btn-success" (click)="readValue()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
