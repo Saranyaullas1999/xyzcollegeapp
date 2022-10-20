@@ -5,6 +5,7 @@
             <table class="table">
                 <thead>
                   <tr>
+                    <th scope="col">ID</th>
                     <th scope="col">Faculty Name</th>
                     <th scope="col">Department</th>
                     <th scope="col">Designation</th>
@@ -17,14 +18,16 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let i of facultyData">
-                    <td>{{i.facname}}</td>
-                    <td>{{i.dep}}</td>
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.department}}</td>
                     <td>{{i.designation}}</td>
                     <td>{{i.dob}}</td>
                     <td>{{i.qualification}}</td>
                     <td>{{i.address}}</td>
                     <td>{{i.mobile}}</td>
                     <td>{{i.doj}}</td>
+                    <td><button class="btn btn-danger" (click)="deleteFaculty(i.id)">Delete</button></td>
                   </tr>
                   
                 </tbody>
