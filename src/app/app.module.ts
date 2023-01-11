@@ -11,7 +11,9 @@ import { AddstudentComponent } from './addstudent/addstudent.component';
 import { ViewallstudentComponent } from './viewallstudent/viewallstudent.component';
 import { AddfacultyComponent } from './addfaculty/addfaculty.component';
 import { ViewallfacultyComponent } from './viewallfaculty/viewallfaculty.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { SearchstudentComponent } from './searchstudent/searchstudent.component';
+import { SearchfacultyComponent } from './searchfaculty/searchfaculty.component'
 
 const appRoutes:Routes=[
   {
@@ -24,6 +26,9 @@ const appRoutes:Routes=[
     path:"add",component:AddstudentComponent
   },
   {
+    path:"search",component:SearchstudentComponent
+  },
+  {
     path:"view",component:ViewallstudentComponent
   },
   {
@@ -31,6 +36,9 @@ const appRoutes:Routes=[
   },
   {
     path:"viewfac",component:ViewallfacultyComponent
+  },
+  {
+    path:"searchfac",component:SearchfacultyComponent
   }
   
 ]
@@ -42,7 +50,9 @@ const appRoutes:Routes=[
     AddstudentComponent,
     ViewallstudentComponent,
     AddfacultyComponent,
-    ViewallfacultyComponent
+    ViewallfacultyComponent,
+    SearchstudentComponent,
+    SearchfacultyComponent
   ],
   imports: [
     BrowserModule,
